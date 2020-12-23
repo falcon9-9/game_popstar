@@ -1,0 +1,158 @@
+body {
+    background: lightcyan;
+}
+
+#id-div-mime {
+    width: 400px;
+    margin: 0 auto;
+    transform: translateY(7%);
+}
+.game-container {
+    width: 450px;
+    height: 450px;
+    background: lightyellow;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+.cell {
+    float: left;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 2;
+    font-size: 0;
+    color: #607D8B;
+    margin: 2px;
+    border-radius: 25%;
+}
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.border_red {
+    filter: brightness(150%);
+}
+
+.color0 {
+    background: transparent;
+}
+.color1 {
+    background: deepskyblue;
+}
+.color2 {
+    background: palevioletred;
+}
+.color3 {
+    background: yellowgreen;
+}
+.color4 {
+    background: orange;
+}
+.color5 {
+    background: darkcyan;
+}
+.heading {
+    width: 400px;
+    margin: 20px auto;
+}
+.heading:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.title {
+    font-size: 35px;
+    line-height: 66px;
+    margin: 0;
+    display: block;
+    float: left;
+    color: teal;
+    font-weight: bold;
+    font-family: "Morning Star";
+}
+
+.scores-container {
+    float: right;
+    text-align: right;
+}
+
+.each-score, .score-container {
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    height: 25px;
+    line-height: 47px;
+    border-radius: 3px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.each-score:after {
+    content: "+";
+}
+
+.each-score:after, .score-container:after {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+}
+
+.score-container:after {
+    content: "Score";
+}
+
+.game-message {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(238,228,218,.5);
+    z-index: 100;
+    text-align: center;
+    animation: fade-in 800ms ease 1200ms;
+    animation-fill-mode: both;
+}
+
+.game-container .game-message p {
+    font-size: 40px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 222px;
+}
+
+
+.game-container .game-message .lower {
+    display: block;
+    margin-top: 59px;
+}
+
+.game-container .game-message a {
+    display: inline-block;
+    background: #8f7a66;
+    border-radius: 3px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #f9f6f2;
+    height: 40px;
+    line-height: 42px;
+    margin-left: 9px;
+}
+
+.game-over {
+    display: block;
+}
+
+
+
